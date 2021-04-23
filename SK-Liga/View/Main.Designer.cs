@@ -35,8 +35,8 @@ namespace SK_Liga.View
             this.buttonRecord = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLeague = new System.Windows.Forms.Panel();
-            this.comboBoxGame = new System.Windows.Forms.ComboBox();
             this.dataGridViewLeague = new System.Windows.Forms.DataGridView();
+            this.comboBoxGame = new System.Windows.Forms.ComboBox();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelLeague.SuspendLayout();
@@ -62,8 +62,9 @@ namespace SK_Liga.View
             this.buttonSettings.Name = "buttonSettings";
             this.buttonSettings.Size = new System.Drawing.Size(136, 136);
             this.buttonSettings.TabIndex = 3;
-            this.buttonSettings.Text = "button3";
+            this.buttonSettings.Text = "Settings";
             this.buttonSettings.UseVisualStyleBackColor = true;
+            this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
             // 
             // buttonProfile
             // 
@@ -71,8 +72,9 @@ namespace SK_Liga.View
             this.buttonProfile.Name = "buttonProfile";
             this.buttonProfile.Size = new System.Drawing.Size(136, 136);
             this.buttonProfile.TabIndex = 2;
-            this.buttonProfile.Text = "button2";
+            this.buttonProfile.Text = "Profil";
             this.buttonProfile.UseVisualStyleBackColor = true;
+            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
             // 
             // buttonRecord
             // 
@@ -80,8 +82,9 @@ namespace SK_Liga.View
             this.buttonRecord.Name = "buttonRecord";
             this.buttonRecord.Size = new System.Drawing.Size(136, 136);
             this.buttonRecord.TabIndex = 1;
-            this.buttonRecord.Text = "button1";
+            this.buttonRecord.Text = "new Record";
             this.buttonRecord.UseVisualStyleBackColor = true;
+            this.buttonRecord.Click += new System.EventHandler(this.buttonRecord_Click);
             // 
             // pictureBox1
             // 
@@ -105,16 +108,6 @@ namespace SK_Liga.View
             this.panelLeague.Size = new System.Drawing.Size(633, 992);
             this.panelLeague.TabIndex = 1;
             // 
-            // comboBoxGame
-            // 
-            this.comboBoxGame.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxGame.FormattingEnabled = true;
-            this.comboBoxGame.Location = new System.Drawing.Point(4, 4);
-            this.comboBoxGame.Name = "comboBoxGame";
-            this.comboBoxGame.Size = new System.Drawing.Size(625, 28);
-            this.comboBoxGame.TabIndex = 0;
-            // 
             // dataGridViewLeague
             // 
             this.dataGridViewLeague.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -127,6 +120,16 @@ namespace SK_Liga.View
             this.dataGridViewLeague.RowTemplate.Height = 28;
             this.dataGridViewLeague.Size = new System.Drawing.Size(625, 950);
             this.dataGridViewLeague.TabIndex = 1;
+            // 
+            // comboBoxGame
+            // 
+            this.comboBoxGame.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxGame.FormattingEnabled = true;
+            this.comboBoxGame.Location = new System.Drawing.Point(4, 4);
+            this.comboBoxGame.Name = "comboBoxGame";
+            this.comboBoxGame.Size = new System.Drawing.Size(625, 28);
+            this.comboBoxGame.TabIndex = 0;
             // 
             // Main
             // 
