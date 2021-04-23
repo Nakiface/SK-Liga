@@ -2,6 +2,6 @@
 {
     public class Player
     {
-        public string Name { get;  internal set; }
+        public string Name { get;  protected set; }
     }
 }

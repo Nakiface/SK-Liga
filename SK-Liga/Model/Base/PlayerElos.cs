@@ -4,7 +4,7 @@ namespace SK_Liga.Model.Base
 {
     public class PlayerElos : Player
     {
-        public List<GameElo> EloList { get; internal set; }
+        public List<GameElo> EloList { get; private set; }
         public PlayerElos(string playerName, List<GameElo> eloList)
         {
             this.Name = playerName;
