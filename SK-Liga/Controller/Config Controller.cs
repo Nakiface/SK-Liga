@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SK_Liga.Controller
 {
-    public static class Config_Controller
+    public static class ConfigController
     {
         public static void CreateFirstConfig(string configPath)
         {
