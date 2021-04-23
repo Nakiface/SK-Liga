@@ -8,8 +8,11 @@ namespace SK_Liga.Model.Base
 {
     public class DataSet
     {
-        public List<Match> Matches { get; set; }
+
         public List<PlayerElos> PlayerElos { get; set; }
+        public List<Game> gameList { get; set; }
+        public List<Match> Matches { get; set; }
+
 
         public DataSet(List<Match> matches, List<PlayerElos> playerElos)
         {
