@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SK_Liga
+namespace SK_Liga.View
 {
     public partial class Main : Form
     {
