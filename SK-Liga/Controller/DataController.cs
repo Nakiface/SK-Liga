@@ -11,7 +11,8 @@ namespace SK_Liga.Controller
     {
         public List<Match> Matches { get; set; }
         public List<PlayerElos> PlayerElos { get; set; }
-        public List<CurrentPlayer> currentPlayers { get; set; }
+        public List<CurrentPlayer> CurrentPlayers { get; set; }
+        public List<Game> GameList { get; set; }
 
         public DataController ()
         {
@@ -20,10 +21,11 @@ namespace SK_Liga.Controller
 
         private void LoadData()
         {
-            var dataJsonPath = Config_Controller.LoadConfig().DataPath;
+            var dataJsonPath = ConfigController.LoadConfig().DataPath;
             DataSet dataSetOrigin = JsonController.Load(dataJsonPath) as DataSet;
             this.Matches = dataSetOrigin.Matches;
             this.PlayerElos = dataSetOrigin.PlayerElos;
+            this.GameList = dataSetOrigin.gameList;
         }
 
         public void CreateCurrentPlayer(Game game)
@@ -34,7 +36,7 @@ namespace SK_Liga.Controller
                 var gameElo = player.EloList.Where(el => el.Game.Equals(game)).FirstOrDefault();
                 CurrentPlayer currentPlayer = new CurrentPlayer(player.Name, gameElo.Elo);
             }
-            this.currentPlayers = currentPlayers;
+            this.CurrentPlayers = currentPlayers;
         }
     }
 }
