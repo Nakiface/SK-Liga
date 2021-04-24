@@ -2,8 +2,8 @@
 {
     public class GameElo
     {
-        public Game Game { get; private set; }
-        public int Elo { get; private set; }
+        public Game Game { get; set; }
+        public int Elo { get; set; }
         public GameElo (Game game, int elo)
         {
             this.Game = game;

@@ -5,10 +5,10 @@ namespace SK_Liga.Model.Base
 {
     public class Match
     {
-        public List<CurrentPlayer> Winner { get; private set; }
-        public List<CurrentPlayer> Loser { get; private set; }
-        public DateTime Date { get; private set; }
-        public Game Game { get; private set; }
+        public List<CurrentPlayer> Winner { get; set; }
+        public List<CurrentPlayer> Loser { get; set; }
+        public DateTime Date { get; set; }
+        public Game Game { get; set; }
         public Match(List<CurrentPlayer> winner, List<CurrentPlayer> loser, Game game)
         {
             this.Winner = winner;

@@ -2,7 +2,7 @@
 {
     public class Game
     {
-        public string Name { get; private set; }
+        public string Name { get; set; }
         public Game(string gameName)
         {
             this.Name = gameName;

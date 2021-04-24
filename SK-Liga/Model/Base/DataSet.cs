@@ -10,7 +10,7 @@ namespace SK_Liga.Model.Base
     {
 
         public List<PlayerElos> PlayerElos { get; set; }
-        public List<Game> gameList { get; set; }
+        public List<Game> GameList { get; set; }
         public List<Match> Matches { get; set; }
 
 
