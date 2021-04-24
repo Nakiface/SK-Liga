@@ -18,20 +18,20 @@ namespace SK_Liga.Controller
         public static void CreateFirstConfig()
         {
             ConfigSettings configSettings = new ConfigSettings();
-            Config config = new Config() { DataPath = configSettings.configPath };
+            Config config = new Config() { DataPath = "" };
             JsonController.Save(configSettings.configPath, config);
         }
 
         public static Config LoadConfig(string configPath)
         {
-            Config config = (Config)JsonController.Load(configPath);
+            Config config = JsonController.LoadConfig(configPath);
             return config;
         }
 
         public static Config LoadConfig()
         {
             ConfigSettings configSettings = new ConfigSettings();
-            Config config = (Config)JsonController.Load(configSettings.configPath);
+            Config config = JsonController.LoadConfig(configSettings.configPath);
             return config;
         }
     }
