@@ -1,4 +1,5 @@
-﻿using SK_Liga.View;
+﻿using SK_Liga.Controller;
+using SK_Liga.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace SK_Liga
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //DataController.CreateFirstDataSetJson();
             Application.Run(new Main());
         }
     }

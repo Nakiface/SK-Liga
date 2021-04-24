@@ -61,8 +61,7 @@
     <Compile Include="Model\Base\Game.cs" />
     <Compile Include="Model\Base\GameElo.cs" />
     <Compile Include="Model\Base\Match.cs" />
-    <Compile Include="Model\Base\Model.cs" />
-    <Compile Include="Model\Base\Player.cs" />
+    <Compile Include="Model\Base\CurrentPlayer.cs" />
     <Compile Include="Model\Base\PlayerElos.cs" />
     <Compile Include="Model\Config\Config.cs" />
     <Compile Include="Model\Config\ConfigSettings.cs" />

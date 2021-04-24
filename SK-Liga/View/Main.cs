@@ -22,8 +22,8 @@ namespace SK_Liga.View
 
     public class MainBindingSources
     {
-        public BindingSource GameBindingSource { get; set; }
-        public BindingSource LeagueBindingSource { get; set; }
+        public BindingSource GameBindingSource { get; set; } = new BindingSource();
+        public BindingSource LeagueBindingSource { get; set; } = new BindingSource();
 
         public MainBindingSources(DataController dataController)
         {
