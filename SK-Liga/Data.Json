@@ -1,0 +1,1 @@
+{"PlayerElos":[{"EloList":[{"Game":{"Name":"dummyGame"},"Elo":1000}],"Name":"Dummy"},{"EloList":[{"Game":{"Name":"dummyGame"},"Elo":500}],"Name":"Dummy2"}],"GameList":[{"Name":"dummyGame"}],"Matches":[{"Winner":[{"CurrentElo":1000,"Name":"Dummy"}],"Loser":[{"CurrentElo":500,"Name":"Dummy2"}],"Date":"2021-04-23T21:50:57.0514055+02:00","Game":{"Name":"dummyGame"}}]}
