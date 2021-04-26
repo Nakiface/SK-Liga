@@ -29,14 +29,14 @@ namespace SK_Liga.Controller
             this.GameList = dataSetOrigin.GameList;
         }
 
-        public void CreateCurrentPlayer(Game game)
+        public void CreateCurrentPlayer(string gameName)
         {
             List<CurrentPlayer> currentPlayers = new List<CurrentPlayer>();
             foreach (var player in PlayerElos)
             {
-                var gameElo = player.EloList.Where(el => el.Game.Equals(game)).FirstOrDefault();
+                var gameElo = player.EloList.Where(el => el.Game.Name == gameName).FirstOrDefault();
                 CurrentPlayer currentPlayer = new CurrentPlayer();
-                currentPlayer.Load(player, game);
+                currentPlayer.Load(player, gameName);
             }
             this.CurrentPlayers = currentPlayers;
         }
@@ -51,9 +51,9 @@ namespace SK_Liga.Controller
             PlayerElos playerElosDummy2 = new PlayerElos("Dummy2", new List<GameElo>() { gameElo2 });
 
             CurrentPlayer currentPlayer1 = new CurrentPlayer();
-            currentPlayer1.Load(playerElosDummy1, game);
+            currentPlayer1.Load(playerElosDummy1, game.Name);
             CurrentPlayer currentPlayer2 = new CurrentPlayer();
-            currentPlayer2.Load(playerElosDummy2, game);
+            currentPlayer2.Load(playerElosDummy2, game.Name);
 
             Match match = new Match(new List<CurrentPlayer>() { currentPlayer1 }, new List<CurrentPlayer>() { currentPlayer2 }, game);
 
