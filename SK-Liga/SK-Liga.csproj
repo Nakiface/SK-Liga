@@ -52,6 +52,7 @@
     <Compile Include="Controller\Config Controller.cs" />
     <Compile Include="Controller\DataController.cs" />
     <Compile Include="Controller\JsonController.cs" />
+    <Compile Include="Model\Base\CurrentPlayerWithRank.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -73,6 +74,8 @@
     <Compile Include="View\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\MainBindingSources.cs" />
+    <Compile Include="View\MainController.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -95,9 +98,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="picture\newfile.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="picture\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\LogoSK.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
