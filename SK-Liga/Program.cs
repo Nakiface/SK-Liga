@@ -19,7 +19,7 @@ namespace SK_Liga
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //DataController.CreateFirstDataSetJson();
-            Application.Run(new Main());
+            Application.Run(new MainForm());
         }
     }
 }
