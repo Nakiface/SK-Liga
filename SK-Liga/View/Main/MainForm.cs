@@ -1,5 +1,6 @@
 ﻿using SK_Liga.Controller;
 using SK_Liga.Model.Base;
+using SK_Liga.View.Settings;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,13 +11,13 @@ using System.Windows.Forms;
 
 namespace SK_Liga.View
 {
-    public partial class Main : Form
+    public partial class MainForm : Form
     {
         private DataController _dataController;
         private MainBindingSources _bindingSources;
         private List<CurrentPlayer> playerList;
 
-        public Main()
+        public MainForm()
         {
             InitializeComponent();
             InitializeVariables();
@@ -48,7 +49,8 @@ namespace SK_Liga.View
 
         private void buttonSettings_Click(object sender, EventArgs e)
         {
-
+            SettingsForm settings = new SettingsForm();
+            settings.Show();
         }
     }
 }
